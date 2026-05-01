@@ -88,18 +88,20 @@ html {
   background-size: 48px 48px;
 }
 
-/* Marquee animation */
+/* Marquee animation - each track translates by its own full width.
+   With two identical tracks side-by-side this creates a perfectly
+   seamless infinite scroll (no reset/jump). */
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-100%); }
 }
 .animate-marquee {
-  animation: marquee 35s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
-/* Faster marquee on mobile / small screens */
+/* Faster on mobile / small screens */
 @media (max-width: 767px) {
-  .animate-marquee { animation-duration: 16s; }
+  .animate-marquee { animation-duration: 14s; }
 }
 
 /* Subtle reveal */
