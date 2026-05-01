@@ -101,7 +101,7 @@ html {
 
 /* Faster on mobile / small screens */
 @media (max-width: 767px) {
-  .animate-marquee { animation-duration: 14s; }
+  .animate-marquee { animation-duration: 25s; }
 }
 
 /* Subtle reveal */
