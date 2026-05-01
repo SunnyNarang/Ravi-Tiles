@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogHeader,
   DialogTitle,
@@ -107,7 +108,15 @@ const Products = () => {
                 </article>
               </DialogTrigger>
 
-              <DialogContent className="max-w-3xl p-0 overflow-hidden rounded-none border-black/15">
+              <DialogContent className="max-w-3xl w-[calc(100%-1.5rem)] p-0 overflow-hidden rounded-none border-black/15 max-h-[92vh] overflow-y-auto [&>button:last-of-type]:hidden">
+                {/* Prominent close button (mobile friendly) */}
+                <DialogClose
+                  aria-label="Close"
+                  className="absolute top-3 right-3 z-20 w-10 h-10 flex items-center justify-center bg-[#0A0A0F] text-white shadow-lg hover:bg-[#1E3FE8] transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E3FE8] focus:ring-offset-2"
+                >
+                  <X size={20} />
+                </DialogClose>
+
                 <div className="grid md:grid-cols-2">
                   <div className="aspect-square md:aspect-auto md:h-full bg-black/5">
                     <img
@@ -116,7 +125,7 @@ const Products = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="p-7">
+                  <div className="p-6 md:p-7">
                     <DialogHeader className="text-left space-y-1">
                       <span className="text-[10px] uppercase tracking-[0.2em] text-[#1E3FE8] font-bold">
                         {p.category}

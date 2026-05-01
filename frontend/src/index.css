@@ -97,6 +97,11 @@ html {
   animation: marquee 35s linear infinite;
 }
 
+/* Faster marquee on mobile / small screens */
+@media (max-width: 767px) {
+  .animate-marquee { animation-duration: 16s; }
+}
+
 /* Subtle reveal */
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(16px); }
