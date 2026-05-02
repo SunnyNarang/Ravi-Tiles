@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+
 import { Phone, Mail, MapPin, MessageCircle, Send } from "lucide-react";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -40,6 +42,13 @@ const Contact = () => {
     const all = JSON.parse(localStorage.getItem("rt_quotes") || "[]");
     all.push({ ...form, at: new Date().toISOString() });
     localStorage.setItem("rt_quotes", JSON.stringify(all));
+    //SEND EMAIL
+    emailjs.sendForm('service_ep30o7o', 'template_57rfhhk', form.current, 'Fg7q2R_sSth9KcSK7').then((result) => {
+      console.log(result.text);
+      }, (error) => {
+      console.log(error.text);
+    });
+
     toast({
       title: "Quote request received",
       description: "Our team will reach out within 24 hours.",
@@ -126,7 +135,7 @@ const Contact = () => {
               href={`https://wa.me/${COMPANY.phoneRaw}?text=${waText}`}
               target="_blank"
               rel="noreferrer"
-              className="mt-10 inline-flex items-center gap-2 bg-white text-[#0A0A0F] hover:bg-[#1E3FE8] hover:text-white transition-colors font-semibold px-5 h-12 uppercase text-sm tracking-wider"
+              className="mt-10 inline-flex items-center gap-2 bg-white text-[#0A0A0F] hover:bg-[#1E3FE8] hover:text-white transition-colors font-semibold px-5 h-12 text-sm tracking-wider"
             >
               <MessageCircle size={18} /> Message on WhatsApp
             </a>
