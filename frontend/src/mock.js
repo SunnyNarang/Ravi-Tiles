@@ -11,7 +11,7 @@ export const COMPANY = {
   phone: "+91 98262 42195",
   phoneRaw: "919826242195",
   email: "ravitilesgwl@gmail.com",
-  address: "Gwalior, Madhya Pradesh, India",
+  address: "A-14 Maharajpura Industrial Area, Gwalior, Madhya Pradesh, India",
 };
 
 export const NAV_LINKS = [
