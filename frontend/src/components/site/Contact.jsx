@@ -53,11 +53,21 @@ const Contact = () => {
         },
       );
 
+      emailjs.send('service_ep30o7o', 'template_hghiy8k', form ,'Fg7q2R_sSth9KcSK7')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+
     toast({
       title: "Quote request received",
       description: "Our team will reach out within 24 hours.",
     });
-    //setForm(initial);
+    setForm(initial);
   };
 
   const waText = encodeURIComponent(
