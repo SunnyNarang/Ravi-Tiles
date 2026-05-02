@@ -50,15 +50,15 @@ export const PRODUCTS = [
     name: "Paver Blocks",
     category: "Pavers",
     image:
-      "https://images.unsplash.com/photo-1652205654728-cfbf878bee95?w=1200&q=80",
+      "https://images.unsplash.com/photo-1624758327259-f934a7b99d7c?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Interlocking concrete pavers for driveways, walkways and plazas.",
     description:
       "Our high-strength interlocking paver blocks are manufactured under hydraulic pressure to deliver exceptional load-bearing capacity. Available in zigzag, unishape, cobble and I-shape patterns with custom colors.",
     specs: [
-      { label: "Sizes", value: "60mm / 80mm / 100mm thickness" },
-      { label: "Strength", value: "35 – 50 MPa" },
-      { label: "Patterns", value: "Zigzag, Unishape, I-Shape, Cobble" },
-      { label: "Finish", value: "Matte / Polished / Textured" },
+      { label: "Sizes", value: "60mm / 80mm thickness" },
+      { label: "Strength", value: "25 – 50 MPa" },
+      { label: "Patterns", value: "Zigzag, Cosmic, I-Shape, Cobble" },
+      { label: "Finish", value: "Rubber Moulded / Polished" },
     ],
     tags: ["High Strength", "Anti-Skid", "Custom Colors"],
   },
@@ -67,13 +67,13 @@ export const PRODUCTS = [
     name: "Cement Chequered Tiles",
     category: "Tiles",
     image:
-      "https://images.unsplash.com/photo-1605602922835-a08452b4179d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1756186890939-b138b09fc17c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Heavy-duty grid pattern tiles for footpaths and parking areas.",
     description:
       "Cement chequered tiles offer a slip-resistant grid surface ideal for sidewalks, parking lots, terraces and industrial floors. Engineered for high traffic and weather resistance.",
     specs: [
-      { label: "Standard Size", value: "300 x 300 mm" },
-      { label: "Thickness", value: "22 – 28 mm" },
+      { label: "Standard Size", value: "300 x 300 mm / 250 x 250 mm" },
+      { label: "Thickness", value: "22 – 35 mm" },
       { label: "Compressive Strength", value: ">25 MPa" },
       { label: "Surface", value: "Chequered / Grooved / Plain" },
     ],
@@ -84,13 +84,13 @@ export const PRODUCTS = [
     name: "Kerb Stones",
     category: "Road",
     image:
-      "https://images.unsplash.com/photo-1655755573097-6ceacda9533e?w=1200&q=80",
+      "/images/kerbstone.jpeg",
     short: "Precast kerb stones for road edging and traffic separation.",
     description:
       "Manufactured to IRC standards, our precast kerb stones provide durable road edging, channel definition and traffic separation. Sharp profiles, consistent dimensions, long service life.",
     specs: [
-      { label: "Standard Sizes", value: "500 x 300 x 150 mm" },
-      { label: "Profiles", value: "Half-batter / Full-batter / Mountable" },
+      { label: "Standard Sizes", value: "300x300x100 mm | 300x450x100 mm" },
+      { label: "Profiles", value: "Round / Chamfered" },
       { label: "Strength", value: "30 – 40 MPa" },
       { label: "Standard", value: "IRC : SP : 84" },
     ],
@@ -109,7 +109,7 @@ export const PRODUCTS = [
       { label: "Material", value: "Clay / Cement" },
       { label: "Coverage", value: "~13 tiles / sqm" },
       { label: "Water Absorption", value: "<10%" },
-      { label: "Colors", value: "Terracotta / Grey / Black" },
+      { label: "Colors", value: "Terracotta" },
     ],
     tags: ["Thermal Resistant", "Eco Friendly"],
   },
@@ -118,12 +118,12 @@ export const PRODUCTS = [
     name: "Fencing Poles",
     category: "Boundary",
     image:
-      "https://images.unsplash.com/photo-1771090410585-c3c095e41906?w=1200&q=80",
+      "https://images.unsplash.com/photo-1662022611950-940d0accfbc9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Reinforced precast concrete poles for boundary fencing.",
     description:
       "High-tensile reinforced concrete fence posts engineered for agricultural, industrial and security boundary applications. Pre-drilled options available.",
     specs: [
-      { label: "Heights", value: "6 ft / 8 ft / 10 ft / 12 ft" },
+      { label: "Heights", value: "2 ft / 4 ft / 6 ft / 8 ft" },
       { label: "Section", value: "Square / I-Section" },
       { label: "Reinforcement", value: "4 – 8 mm TMT bars" },
       { label: "Finish", value: "Smooth / Pre-drilled" },
@@ -135,12 +135,12 @@ export const PRODUCTS = [
     name: "Cable Covers",
     category: "Utility",
     image:
-      "https://images.unsplash.com/photo-1657007508392-d68322544f70?w=1200&q=80",
+      "/images/cablecover.jpg",
     short: "Concrete cable trench covers for utility protection.",
     description:
       "Heavy-duty precast cable trench covers used by power utilities, telecom and industrial plants to protect underground cables from damage and provide easy access.",
     specs: [
-      { label: "Sizes", value: "Custom – up to 1200 x 600 mm" },
+      { label: "Sizes", value: "LT (250x150x40 mm) / HT (300x180x40 mm)" },
       { label: "Load Class", value: "Light / Medium / Heavy" },
       { label: "Reinforcement", value: "Steel mesh / TMT" },
       { label: "Use", value: "Power, Telecom, Industrial" },
@@ -152,13 +152,13 @@ export const PRODUCTS = [
     name: "Breeze Blocks (Terracotta Jali)",
     category: "Decorative",
     image:
-      "https://images.unsplash.com/photo-1564864829977-701822524526?w=1200&q=80",
+      "/images/breezeblock.jpg",
     short: "Decorative perforated screen blocks for ventilation & style.",
     description:
       "Architectural breeze blocks combine ventilation, privacy and visual character. Ideal for facades, balconies, partition walls and landscape features.",
     specs: [
-      { label: "Standard Size", value: "190 x 190 x 90 mm" },
-      { label: "Patterns", value: "Cross / Floral / Diamond / Custom" },
+      { label: "Standard Size", value: "200 x 200 x 60 mm" },
+      { label: "Patterns", value: "Amber / Four Petal / Opal / Kemp" },
       { label: "Material", value: "Cement / Terracotta" },
       { label: "Use", value: "Facade / Partition / Landscape" },
     ],
@@ -169,13 +169,13 @@ export const PRODUCTS = [
     name: "Precast Boundary Wall",
     category: "Boundary",
     image:
-      "https://images.unsplash.com/photo-1709217930532-dbfb23e0fedd?w=1200&q=80",
+      "https://images.unsplash.com/photo-1727870635140-09c9f077136a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Quick-install precast compound wall systems.",
     description:
       "Engineered precast compound wall panels with pre-cast posts deliver a strong, secure boundary in days, not weeks. Ideal for factories, farms, plots and societies.",
     specs: [
-      { label: "Panel Size", value: "2000 x 500 x 50 mm" },
-      { label: "Heights", value: "5 ft – 10 ft" },
+      { label: "Panel Size", value: "1800 x 300 x 50 mm" },
+      { label: "Heights", value: "6 ft – 8 ft" },
       { label: "Installation", value: "3 – 5x faster than brick" },
       { label: "Finish", value: "Plain / Textured / Painted" },
     ],
@@ -186,7 +186,7 @@ export const PRODUCTS = [
     name: "Cement Jali",
     category: "Decorative",
     image:
-      "https://images.unsplash.com/photo-1749976611095-4a58f7e57e4e?w=1200&q=80",
+      "/images/cementjali.jpeg",
     short: "Modern decorative concrete grilles for facades & gardens.",
     description:
       "Sleek geometric cement jalis bring contemporary character to facades, parapets, garden walls and screens, while allowing light and breeze to flow through.",
@@ -203,12 +203,12 @@ export const PRODUCTS = [
     name: "Grass Pavers",
     category: "Eco",
     image:
-      "https://images.unsplash.com/photo-1774023507719-28e5c6ecccee?w=1200&q=80",
+      "https://images.unsplash.com/photo-1755778803577-5ea0e90ffd1d?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Eco-friendly turf pavers for parking and green driveways.",
     description:
       "Open-grid grass pavers allow grass to grow through while supporting vehicle loads — perfect for green parking, fire lanes and sustainable driveways.",
     specs: [
-      { label: "Standard Size", value: "400 x 400 x 80 mm" },
+      { label: "Standard Size", value: "250 x 250 x 60 mm" },
       { label: "Open Area", value: "~40%" },
       { label: "Load", value: "Suitable for cars & light trucks" },
       { label: "Use", value: "Green parking, fire lanes" },
@@ -220,13 +220,13 @@ export const PRODUCTS = [
     name: "Saucer Drains",
     category: "Drainage",
     image:
-      "https://images.unsplash.com/photo-1775986351678-c3085a922c6f?w=1200&q=80",
+      "/images/saucer_drain.jpg",
     short: "Precast U-shaped concrete drains for surface water.",
     description:
       "Precast saucer / U-drains handle surface water efficiently along roads, parking areas and industrial yards. Smooth profile, consistent dimensions, easy installation.",
     specs: [
-      { label: "Sizes", value: "600 x 450 / 900 x 600 mm" },
-      { label: "Profiles", value: "U-Drain / Saucer / Trapezoidal" },
+      { label: "Sizes", value: "300 x 300 / 450 x 300 mm" },
+      { label: "Profiles", value: "U-Drain / Saucer" },
       { label: "Strength", value: "30 – 35 MPa" },
       { label: "Use", value: "Roads, yards, parking" },
     ],
