@@ -58,11 +58,7 @@ const WhyChooseUs = () => {
                 <p className="mt-2 text-sm text-white/65 leading-relaxed">
                   {f.desc}
                 </p>
-                <div className="mt-5 flex items-center gap-1">
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-white/35 font-semibold">
-                    0{i + 1}
-                  </span>
-                </div>
+                
               </div>
             );
           })}
