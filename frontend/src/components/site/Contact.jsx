@@ -31,10 +31,10 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!form.name || !form.phone) {
+    if (!form.name || !form.phone || !form.product || !form.email) {
       toast({
         title: "Missing details",
-        description: "Please share your name and phone number.",
+        description: "Please share necessary details",
       });
       return;
     }
@@ -43,17 +43,21 @@ const Contact = () => {
     all.push({ ...form, at: new Date().toISOString() });
     localStorage.setItem("rt_quotes", JSON.stringify(all));
     //SEND EMAIL
-    emailjs.sendForm('service_ep30o7o', 'template_57rfhhk', form.current, 'Fg7q2R_sSth9KcSK7').then((result) => {
-      console.log(result.text);
-      }, (error) => {
-      console.log(error.text);
-    });
+    emailjs.send('service_ep30o7o', 'template_57rfhhk', form ,'Fg7q2R_sSth9KcSK7')
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
 
     toast({
       title: "Quote request received",
       description: "Our team will reach out within 24 hours.",
     });
-    setForm(initial);
+    //setForm(initial);
   };
 
   const waText = encodeURIComponent(
@@ -180,7 +184,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="text-[11px] uppercase tracking-wider font-semibold text-foreground/70">
-                    Email
+                    Email *
                   </label>
                   <Input
                     name="email"
@@ -193,7 +197,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="text-[11px] uppercase tracking-wider font-semibold text-foreground/70">
-                    Product Interest
+                    Product Interest *
                   </label>
                   <Select
                     value={form.product}
