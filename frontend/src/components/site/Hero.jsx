@@ -81,7 +81,7 @@ const Hero = () => {
               {/* Image card */}
               <div className="absolute inset-0 m-6 overflow-hidden border border-black/10 shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1676984290997-b862e8f0919c?w=1400&q=85"
+                  src="https://images.unsplash.com/photo-1657045898640-9dc5b0772ebd?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Premium paver blocks"
                   className="w-full h-full object-cover"
                 />
@@ -92,7 +92,7 @@ const Hero = () => {
                   Compressive Strength
                 </div>
                 <div className="font-display font-black text-2xl mt-1">
-                  35–50 <span className="text-[#1E3FE8]">MPa</span>
+                  25–50 <span className="text-[#1E3FE8]">MPa</span>
                 </div>
               </div>
             </div>
