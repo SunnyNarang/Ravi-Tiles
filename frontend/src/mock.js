@@ -61,6 +61,28 @@ export const PRODUCTS = [
       { label: "Finish", value: "Rubber Moulded / Polished" },
     ],
     tags: ["High Strength", "Anti-Skid", "Custom Colors"],
+    
+
+      // 👇 NEW — add as many variants as you want
+      variants: [
+        {
+          name: "Zigzag",
+          image: "https://images.unsplash.com/photo-1624758327259-f934a7b99d7c?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Classic zigzag interlock, ideal for driveways.",
+        },
+        {
+          name: "I Shape",
+          image: "https://images.unsplash.com/photo-1657045898661-1a56bc5a8fd2?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Rounded cobble finish in warm earth tones.",
+        },
+        {
+          name: "Cobble Stone",
+          image: "https://images.unsplash.com/photo-1674333104015-8e3effa361c1?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          desc: "Rectangular running bond — timeless & strong.",
+        },
+        // ... add 6, 7, 10, as many as you want
+      ],
+
   },
   {
     id: "chequered-tiles",
