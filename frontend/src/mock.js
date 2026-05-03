@@ -27,7 +27,7 @@ export const STATS = [
   { value: "45+", label: "Years of Excellence" },
   { value: "500+", label: "Projects Delivered" },
   { value: "50+", label: "Enterprise Clients" },
-  { value: "11", label: "Product Categories" },
+  { value: "12", label: "Product Categories" },
 ];
 
 export const CLIENTS = [
@@ -50,7 +50,7 @@ export const PRODUCTS = [
     name: "Paver Blocks",
     category: "Pavers",
     image:
-      "https://images.unsplash.com/photo-1624758327259-f934a7b99d7c?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/images/bigbrooks.jpeg",
     short: "Interlocking concrete pavers for driveways, walkways and plazas.",
     description:
       "Our high-strength interlocking paver blocks are manufactured under hydraulic pressure to deliver exceptional load-bearing capacity. Available in zigzag, unishape, cobble and I-shape patterns with custom colors.",
@@ -67,20 +67,45 @@ export const PRODUCTS = [
       variants: [
         {
           name: "Zigzag",
-          image: "https://images.unsplash.com/photo-1624758327259-f934a7b99d7c?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          image: "/images/zigzag.jpeg",
           desc: "Classic zigzag interlock, ideal for driveways.",
         },
         {
           name: "I Shape",
-          image: "https://images.unsplash.com/photo-1657045898661-1a56bc5a8fd2?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          image: "/images/ishape.jpeg",
           desc: "Rounded cobble finish in warm earth tones.",
         },
         {
-          name: "Cobble Stone",
-          image: "https://images.unsplash.com/photo-1674333104015-8e3effa361c1?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          name: "Square Cobble",
+          image: "/images/square60.jpeg",
           desc: "Rectangular running bond — timeless & strong.",
         },
-        // ... add 6, 7, 10, as many as you want
+        {
+          name: "Big Brooks",
+          image: "/images/bigbrooks.jpeg",
+          desc: "Classic zigzag interlock, ideal for driveways.",
+        },
+        {
+          name: "Hexagon",
+          image: "/images/hexa.jpeg",
+          desc: "Rounded cobble finish in warm earth tones.",
+        },
+        {
+          name: "Cobble",
+          image: "/images/cobble.jpeg",
+          desc: "Rectangular running bond — timeless & strong.",
+        },
+        {
+          name: "Square Leather Finish",
+          image: "/images/square80.jpeg",
+          desc: "Classic zigzag interlock, ideal for driveways.",
+        },
+        {
+          name: "Cosmic",
+          image: "/images/cosmic.jpeg",
+          desc: "Rounded cobble finish in warm earth tones.",
+        },
+       // 6, 7, 10, as many as you want
       ],
 
   },
@@ -98,6 +123,23 @@ export const PRODUCTS = [
       { label: "Thickness", value: "22 – 35 mm" },
       { label: "Compressive Strength", value: ">25 MPa" },
       { label: "Surface", value: "Chequered / Grooved / Plain" },
+    ],
+    tags: ["Anti-Skid", "Weather Resistant"],
+  },
+  {
+    id: "tactile",
+    name: "Tac Tiles",
+    category: "Tiles",
+    image:
+      "/images/tactile.jpeg",
+    short: "Textured pathway guiding visually impaired for safe navigation.",
+    description:
+      "A tactile pathway is a textured ground surface designed to guide and alert visually impaired individuals for safe navigation.",
+    specs: [
+      { label: "Standard Size", value: "300 x 300 mm" },
+      { label: "Thickness", value: "22 – 25 mm" },
+      { label: "Compressive Strength", value: ">25 MPa" },
+      { label: "Surface", value: "Grooved / Dotted" },
     ],
     tags: ["Anti-Skid", "Weather Resistant"],
   },
@@ -185,6 +227,29 @@ export const PRODUCTS = [
       { label: "Use", value: "Facade / Partition / Landscape" },
     ],
     tags: ["Architectural", "Ventilation"],
+
+    variants: [
+        {
+          name: "Amber",
+          image: "/images/amber.jpg",
+          desc: "Timeless geometric breeze blocks balancing airflow, light, and privacy.",
+        },
+        {
+          name: "Four Petal",
+          image: "/images/4petal.jpg",
+          desc: "Perforated concrete blocks creating shade, ventilation, and visual rhythm.",
+        },
+        {
+          name: "Opal",
+          image: "/images/opal.jpg",
+          desc: "Decorative screen blocks enhancing facades with light and airflow.",
+        },
+        {
+          name: "Kemp",
+          image: "/images/kemp.jpg",
+          desc: "Functional breeze blocks providing privacy while allowing natural ventilation",
+        },
+      ]
   },
   {
     id: "boundary-wall",
@@ -223,7 +288,7 @@ export const PRODUCTS = [
   {
     id: "grass-pavers",
     name: "Grass Pavers",
-    category: "Eco",
+    category: "Pavers",
     image:
       "https://images.unsplash.com/photo-1755778803577-5ea0e90ffd1d?q=80&w=2231&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     short: "Eco-friendly turf pavers for parking and green driveways.",
