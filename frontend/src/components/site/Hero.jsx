@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden"
+      className="relative pt-24 pb-20 lg:pt-24 lg:pb-28 overflow-hidden"
     >
       {/* Subtle background grid */}
       <div className="absolute inset-0 grid-bg opacity-60 pointer-events-none" />
@@ -18,10 +18,23 @@ const Hero = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left: copy */}
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 border border-black/15 bg-white/60 px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] font-semibold">
-              <span className="w-1.5 h-1.5 bg-[#1E3FE8]" />
-              Since 1980 • ISI Marked • ISO Certified
+
+<div className="flex flex-col gap-3">
+
+            <div className="flex items-center gap-4 px-3 py-1.5">
+            <img width={300} height={40}
+                src="/images/certi.png"
+                />  
             </div>
+            
+            <div className="flex items-center gap-2 border border-black/15 bg-white/60 px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] font-semibold">
+              <span className="w-1.5 h-1.5 bg-[#1E3FE8]" />
+              Since 1980 • {COMPANY.yearsInIndustry}+ Years of Excellence
+            </div>
+
+
+</div>
+
 
             <h1 className="mt-6 font-display font-black text-[3rem] sm:text-[3.75rem] lg:text-[5.25rem] leading-[0.95] tracking-tight text-balance">
               Strong{" "}
