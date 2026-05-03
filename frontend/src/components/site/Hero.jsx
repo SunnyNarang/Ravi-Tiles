@@ -20,7 +20,7 @@ const Hero = () => {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 border border-black/15 bg-white/60 px-3 py-1.5 text-[11px] uppercase tracking-[0.18em] font-semibold">
               <span className="w-1.5 h-1.5 bg-[#1E3FE8]" />
-              Since 1980 • {COMPANY.yearsInIndustry}+ Years of Excellence
+              Since 1980 • ISI Marked • ISO Certified
             </div>
 
             <h1 className="mt-6 font-display font-black text-[3rem] sm:text-[3.75rem] lg:text-[5.25rem] leading-[0.95] tracking-tight text-balance">
@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-6 text-lg text-foreground/70 max-w-xl leading-relaxed">
-              Premium paver blocks and precast cement solutions engineered for
+              Premium <strong>ISI Marked</strong> paver blocks and precast cement solutions engineered for
               strength, beauty and generations. Trusted by India&apos;s leading
               infrastructure, defense and industrial enterprises.
             </p>

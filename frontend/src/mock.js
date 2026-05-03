@@ -47,7 +47,7 @@ export const CLIENTS = [
 export const PRODUCTS = [
   {
     id: "paver-blocks",
-    name: "Paver Blocks",
+    name: "Paver Blocks - ISI Marked",
     category: "Pavers",
     image:
       "/images/bigbrooks.jpeg",
@@ -196,7 +196,7 @@ export const PRODUCTS = [
   },
   {
     id: "cable-covers",
-    name: "Cable Covers",
+    name: "Cable Covers - ISI Marked",
     category: "Utility",
     image:
       "/images/cablecover.jpg",
