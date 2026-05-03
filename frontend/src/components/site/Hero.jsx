@@ -22,7 +22,7 @@ const Hero = () => {
 <div className="flex flex-col gap-3">
 
             <div className="flex items-center gap-4 px-3 py-1.5">
-            <img width={300} height={40}
+            <img width={250} height={20}
                 src="/images/certi.png"
                 />  
             </div>
