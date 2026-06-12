@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <div className="App bg-background text-foreground">
       <Header />
+      
       <main>
         <Hero />
         <TrustBar />
@@ -42,6 +43,21 @@ const Home = () => {
 };
 
 function App() {
+
+  useEffect(() => {
+    // 1. Inject the external Google Analytics script
+    const script = document.createElement('script');
+    script.src = "https://googletagmanager.com";
+    script.async = true;
+    document.head.appendChild(script);
+
+    // 2. Initialize dataLayer and gtag function
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-G1ZZFQ2LQ0');
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>
