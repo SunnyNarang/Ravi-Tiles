@@ -50,7 +50,7 @@ export const PRODUCTS = [
     name: "Paver Blocks - ISI Marked",
     category: "Pavers",
     image:
-      "/images/bigbrooks.jpeg",
+      "/images/zcobble.jpeg",
     short: "Interlocking concrete pavers for driveways, walkways and plazas.",
     description:
       "Our high-strength interlocking paver blocks are manufactured under hydraulic pressure to deliver exceptional load-bearing capacity. Available in zigzag, unishape, cobble and I-shape patterns with custom colors.",
@@ -69,6 +69,11 @@ export const PRODUCTS = [
           name: "Zigzag",
           image: "/images/zigzag.jpeg",
           desc: "Classic zigzag interlock, ideal for driveways.",
+        },
+        {
+          name: "Z Cobble",
+          image: "/images/zcobble.jpeg",
+          desc: "Modern and Elegant alternate to Square Paver with enhanced interlocking.",
         },
         {
           name: "I Shape",
